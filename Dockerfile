@@ -4,7 +4,7 @@ RUN yum install -y gcc curl-devel expat-devel gettext-devel openssl-devel zlib-d
 && wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-${GIT_VERSION}.tar.gz \
 && tar zxvf git-${GIT_VERSION}.tar.gz \
 && cd ./git-${GIT_VERSION} \
-&& ./configure --prefix=/tmp/git \
+&& ./configure --prefix=/git \
 && make all \
 && make install
 
